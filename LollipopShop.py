@@ -1,5 +1,6 @@
 import sys
 
+
 def solve(D, prefs, not_used, seen):
     prefs = [j for j in prefs if j in not_used]
     argmin, mini = -1, 1000000
@@ -19,7 +20,8 @@ def solve(D, prefs, not_used, seen):
     sys.stdout.flush()
 
     return not_used, seen
-    
+
+
 T = int(input())
 for _ in range(T):
     N = int(input())
